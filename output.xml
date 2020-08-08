@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2.dev1 (Python 3.8.5 on darwin)" generated="20200806 22:52:28.455" rpa="false">
+<suite id="s1" name="Automation" source="/Users/rohitraj/PycharmProjects/AudvikLabs-ATAF/Automation.robot">
+<test id="s1-t1" name="The user can search for AudvikLabs">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://www.audviklabs.com/</arg>
+<arg>Chrome</arg>
+</arguments>
+<msg timestamp="20200806 22:52:28.709" level="INFO">Opening browser 'Chrome' to base url 'https://www.audviklabs.com/'.</msg>
+<status status="PASS" starttime="20200806 22:52:28.709" endtime="20200806 22:52:32.764"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>xpath://*[@id="menu-item-32"]/a</arg>
+<arg>[Return]</arg>
+</arguments>
+<msg timestamp="20200806 22:52:32.767" level="INFO">Sending key(s) ('[Return]',) to xpath://*[@id="menu-item-32"]/a element.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200806 22:52:32.781" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.105)
+</msg>
+<status status="FAIL" starttime="20200806 22:52:32.769" endtime="20200806 22:52:32.781"></status>
+</kw>
+<msg timestamp="20200806 22:52:32.781" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.105)
+</msg>
+<msg timestamp="20200806 22:52:32.786" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.105)
+</msg>
+<status status="FAIL" starttime="20200806 22:52:32.766" endtime="20200806 22:52:32.786"></status>
+</kw>
+<tags>
+<tag>AudvikLabs</tag>
+</tags>
+<status status="FAIL" starttime="20200806 22:52:28.708" endtime="20200806 22:52:32.786" critical="yes">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.105)
+</status>
+</test>
+<doc>ATAF Results</doc>
+<status status="FAIL" starttime="20200806 22:52:28.456" endtime="20200806 22:52:32.788"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">AudvikLabs</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Automation">Automation</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200806 22:52:32.781" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=84.0.4147.105)
+</msg>
+</errors>
+</robot>
